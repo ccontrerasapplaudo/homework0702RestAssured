@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite1" parallel="false">
-    <test name="ApiTest" preserve-order="true">
+    <parameter name="firstname" value="Nombre de prueba"/>
+    <parameter name="lastname" value="Apellido de prueba"/>
+    <parameter name="checkin" value="2022-11-10T09:48:25.469Z"/>
+    <parameter name="checkout" value="2022-11-11T09:48:25.469Z"/>
+    <test name="ApiTest" preserve-order="true" parallel = "classes" thread-count = "2">
         <classes>
             <class name="com.example.homework0702restassured.restassuredtests.RestAssuredTests"></class>
         </classes>
